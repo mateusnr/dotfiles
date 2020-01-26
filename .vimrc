@@ -24,5 +24,5 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
-autocmd vimenter * NERDTree
 nmap <F3> :NERDTreeToggle<CR>
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
