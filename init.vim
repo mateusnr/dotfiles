@@ -19,6 +19,10 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'preservim/nerdtree'
 Plug 'marko-cerovac/material.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'TimUntersberger/neogit'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
@@ -26,6 +30,8 @@ lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.clangd.setup{}
 
 let g:material_style = 'lighter'
+let g:airline_theme='ayu_mirage'
+let g:airline_powerline_fonts = 1
 colorscheme material
 
 nmap <F3> :NERDTreeToggle<CR>
